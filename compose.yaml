@@ -1,0 +1,26 @@
+services:
+  scamshield:
+    build: .
+    ports:
+      - "127.0.0.1:8001:8000"
+    environment:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    volumes:
+      - type: bind
+        source: ./models/sms_distilmbert
+        target: /app/models/sms_distilmbert
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./reports/sms_model_selection.json
+        target: /app/reports/sms_model_selection.json
+        read_only: true
+        bind:
+          create_host_path: false
+    read_only: true
+    tmpfs:
+      - /tmp
+    init: true
+    restart: "no"

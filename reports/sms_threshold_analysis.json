@@ -1,0 +1,286 @@
+{
+  "common_threshold_table": [
+    {
+      "f1_spam": 0.29015544041450775,
+      "false_negative_spam_missed": 0,
+      "false_positive_ham_flagged": 548,
+      "precision_spam": 0.1696969696969697,
+      "predicted_spam_count": 660,
+      "recall_spam": 1.0,
+      "threshold": 0.05,
+      "true_negative_ham_correct": 176,
+      "true_positive_spam_detected": 112
+    },
+    {
+      "f1_spam": 0.6187845303867403,
+      "false_negative_spam_missed": 0,
+      "false_positive_ham_flagged": 138,
+      "precision_spam": 0.448,
+      "predicted_spam_count": 250,
+      "recall_spam": 1.0,
+      "threshold": 0.1,
+      "true_negative_ham_correct": 586,
+      "true_positive_spam_detected": 112
+    },
+    {
+      "f1_spam": 0.8345864661654135,
+      "false_negative_spam_missed": 1,
+      "false_positive_ham_flagged": 43,
+      "precision_spam": 0.7207792207792207,
+      "predicted_spam_count": 154,
+      "recall_spam": 0.9910714285714286,
+      "threshold": 0.15,
+      "true_negative_ham_correct": 681,
+      "true_positive_spam_detected": 111
+    },
+    {
+      "f1_spam": 0.9024390243902439,
+      "false_negative_spam_missed": 1,
+      "false_positive_ham_flagged": 23,
+      "precision_spam": 0.8283582089552238,
+      "predicted_spam_count": 134,
+      "recall_spam": 0.9910714285714286,
+      "threshold": 0.2,
+      "true_negative_ham_correct": 701,
+      "true_positive_spam_detected": 111
+    },
+    {
+      "f1_spam": 0.9487179487179487,
+      "false_negative_spam_missed": 1,
+      "false_positive_ham_flagged": 11,
+      "precision_spam": 0.9098360655737705,
+      "predicted_spam_count": 122,
+      "recall_spam": 0.9910714285714286,
+      "threshold": 0.25,
+      "true_negative_ham_correct": 713,
+      "true_positive_spam_detected": 111
+    },
+    {
+      "f1_spam": 0.9553571428571429,
+      "false_negative_spam_missed": 5,
+      "false_positive_ham_flagged": 5,
+      "precision_spam": 0.9553571428571429,
+      "predicted_spam_count": 112,
+      "recall_spam": 0.9553571428571429,
+      "threshold": 0.3,
+      "true_negative_ham_correct": 719,
+      "true_positive_spam_detected": 107
+    },
+    {
+      "f1_spam": 0.9488372093023256,
+      "false_negative_spam_missed": 10,
+      "false_positive_ham_flagged": 1,
+      "precision_spam": 0.9902912621359223,
+      "predicted_spam_count": 103,
+      "recall_spam": 0.9107142857142857,
+      "threshold": 0.35,
+      "true_negative_ham_correct": 723,
+      "true_positive_spam_detected": 102
+    },
+    {
+      "f1_spam": 0.9073170731707317,
+      "false_negative_spam_missed": 19,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 93,
+      "recall_spam": 0.8303571428571429,
+      "threshold": 0.4,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 93
+    },
+    {
+      "f1_spam": 0.845360824742268,
+      "false_negative_spam_missed": 30,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 82,
+      "recall_spam": 0.7321428571428571,
+      "threshold": 0.45,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 82
+    },
+    {
+      "f1_spam": 0.8393782383419689,
+      "false_negative_spam_missed": 31,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 81,
+      "recall_spam": 0.7232142857142857,
+      "threshold": 0.5,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 81
+    },
+    {
+      "f1_spam": 0.7624309392265194,
+      "false_negative_spam_missed": 43,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 69,
+      "recall_spam": 0.6160714285714286,
+      "threshold": 0.55,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 69
+    },
+    {
+      "f1_spam": 0.6341463414634146,
+      "false_negative_spam_missed": 60,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 52,
+      "recall_spam": 0.4642857142857143,
+      "threshold": 0.6,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 52
+    },
+    {
+      "f1_spam": 0.5548387096774193,
+      "false_negative_spam_missed": 69,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 43,
+      "recall_spam": 0.38392857142857145,
+      "threshold": 0.65,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 43
+    },
+    {
+      "f1_spam": 0.45517241379310347,
+      "false_negative_spam_missed": 79,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 33,
+      "recall_spam": 0.29464285714285715,
+      "threshold": 0.7,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 33
+    },
+    {
+      "f1_spam": 0.37681159420289856,
+      "false_negative_spam_missed": 86,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 26,
+      "recall_spam": 0.23214285714285715,
+      "threshold": 0.75,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 26
+    },
+    {
+      "f1_spam": 0.27692307692307694,
+      "false_negative_spam_missed": 94,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 18,
+      "recall_spam": 0.16071428571428573,
+      "threshold": 0.8,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 18
+    },
+    {
+      "f1_spam": 0.03508771929824561,
+      "false_negative_spam_missed": 110,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 1.0,
+      "predicted_spam_count": 2,
+      "recall_spam": 0.017857142857142856,
+      "threshold": 0.85,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 2
+    },
+    {
+      "f1_spam": 0.0,
+      "false_negative_spam_missed": 112,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 0.0,
+      "predicted_spam_count": 0,
+      "recall_spam": 0.0,
+      "threshold": 0.9,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 0
+    },
+    {
+      "f1_spam": 0.0,
+      "false_negative_spam_missed": 112,
+      "false_positive_ham_flagged": 0,
+      "precision_spam": 0.0,
+      "predicted_spam_count": 0,
+      "recall_spam": 0.0,
+      "threshold": 0.95,
+      "true_negative_ham_correct": 724,
+      "true_positive_spam_detected": 0
+    }
+  ],
+  "default_threshold": 0.5,
+  "default_threshold_metrics": {
+    "f1_spam": 0.8393782383419689,
+    "false_negative_spam_missed": 31,
+    "false_positive_ham_flagged": 0,
+    "precision_spam": 1.0,
+    "predicted_spam_count": 81,
+    "recall_spam": 0.7232142857142857,
+    "threshold": 0.5,
+    "true_negative_ham_correct": 724,
+    "true_positive_spam_detected": 81
+  },
+  "generated_at_utc": "2026-10-12T13:50:50.481418+00:00",
+  "ham_negative_count": 724,
+  "model_file": "models/sms_tfidf_logreg.joblib",
+  "model_sha256": "0ee76c6fcf15749b80527a55749ea066bca218d604a64d38ef7f29d07f611fcc",
+  "run_status": "complete",
+  "scope": "UCI SMS validation split only; no test rows were loaded or scored.",
+  "selection_note": "These points show validation trade-offs only. They do not select or lock a final threshold; choose according to the intended false-negative/false-positive cost, then evaluate the held-out test once.",
+  "source_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "spam_positive_count": 112,
+  "split_manifest_sha256": "066c36be8258449179b725c514e06971cb26a971b9d1c98191b7c2aecffd0f99",
+  "test_split_used": false,
+  "training_report_file": "reports/sms_tfidf_logreg_validation.json",
+  "validation_candidate_operating_points": {
+    "best_f1_on_validation": {
+      "f1_spam": 0.9736842105263158,
+      "false_negative_spam_missed": 1,
+      "false_positive_ham_flagged": 5,
+      "precision_spam": 0.9568965517241379,
+      "predicted_spam_count": 116,
+      "recall_spam": 0.9910714285714286,
+      "threshold": 0.27913761238985096,
+      "true_negative_ham_correct": 719,
+      "true_positive_spam_detected": 111
+    },
+    "highest_recall_under_precision_floors": {
+      "precision_at_least_0.80": {
+        "f1_spam": 0.9736842105263158,
+        "false_negative_spam_missed": 1,
+        "false_positive_ham_flagged": 5,
+        "precision_spam": 0.9568965517241379,
+        "predicted_spam_count": 116,
+        "recall_spam": 0.9910714285714286,
+        "threshold": 0.27913761238985096,
+        "true_negative_ham_correct": 719,
+        "true_positive_spam_detected": 111
+      },
+      "precision_at_least_0.90": {
+        "f1_spam": 0.9736842105263158,
+        "false_negative_spam_missed": 1,
+        "false_positive_ham_flagged": 5,
+        "precision_spam": 0.9568965517241379,
+        "predicted_spam_count": 116,
+        "recall_spam": 0.9910714285714286,
+        "threshold": 0.27913761238985096,
+        "true_negative_ham_correct": 719,
+        "true_positive_spam_detected": 111
+      },
+      "precision_at_least_0.95": {
+        "f1_spam": 0.9736842105263158,
+        "false_negative_spam_missed": 1,
+        "false_positive_ham_flagged": 5,
+        "precision_spam": 0.9568965517241379,
+        "predicted_spam_count": 116,
+        "recall_spam": 0.9910714285714286,
+        "threshold": 0.27913761238985096,
+        "true_negative_ham_correct": 719,
+        "true_positive_spam_detected": 111
+      }
+    }
+  },
+  "validation_row_count": 836
+}

@@ -1,0 +1,54 @@
+{
+  "assignment": "Deterministic greedy allocation of whole groups within each label toward 70/15/15 row-count targets; actual ratios may differ because groups cannot be split.",
+  "generated_at_utc": "2026-10-12T10:52:03.490585+00:00",
+  "group_count": 5113,
+  "group_counts_by_split": {
+    "test": 627,
+    "train": 3862,
+    "validation": 624
+  },
+  "grouping": "Exact normalized messages are grouped; messages with a template signature of at least 20 characters are grouped by NFKC/trim/case-fold plus URL/number/punctuation normalization.",
+  "groups_appearing_in_multiple_splits": 0,
+  "label_counts_by_split": {
+    "test": {
+      "0": 724,
+      "1": 112
+    },
+    "train": {
+      "0": 3379,
+      "1": 523
+    },
+    "validation": {
+      "0": 724,
+      "1": 112
+    }
+  },
+  "label_mapping": {
+    "ham": 0,
+    "spam": 1
+  },
+  "largest_group_rows": 30,
+  "manifest_file": "data/processed/sms_split_manifest.csv",
+  "manifest_sha256": "066c36be8258449179b725c514e06971cb26a971b9d1c98191b7c2aecffd0f99",
+  "raw_text_in_manifest": false,
+  "row_counts_by_split": {
+    "test": 836,
+    "train": 3902,
+    "validation": 836
+  },
+  "row_ratios_by_split": {
+    "test": 0.14998205956225333,
+    "train": 0.7000358808754934,
+    "validation": 0.14998205956225333
+  },
+  "run_status": "complete",
+  "seed": 42,
+  "source_file": "data/raw/uci_sms_spam_collection.zip",
+  "source_row_count": 5574,
+  "source_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "target_split_ratios": {
+    "test": 0.15,
+    "train": 0.7,
+    "validation": 0.15
+  }
+}

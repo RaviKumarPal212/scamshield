@@ -1,0 +1,48 @@
+{
+  "evaluation_scope": "One-time evaluation of the locked model and threshold on the UCI SMS test split.",
+  "generated_at_utc": "2026-10-12T15:44:29.176577+00:00",
+  "inference": {
+    "batch_size": 32,
+    "device": "cuda",
+    "max_token_length": 256,
+    "training_report": "reports/sms_distilmbert_validation.json",
+    "validation_best_checkpoint_metric": "validation macro-F1 at 0.5 threshold"
+  },
+  "limitations": [
+    "UCI SMS Spam Collection is an English SMS spam dataset, not India-specific scam data.",
+    "The test set was used once with the model and threshold locked in advance; do not tune on these results.",
+    "Performance does not establish Hindi or Hinglish effectiveness."
+  ],
+  "locked_threshold": 0.609175443649292,
+  "model_selection_record": "reports/sms_model_selection.json",
+  "run_status": "complete",
+  "selected_model": {
+    "artifact_directory": "models/sms_distilmbert",
+    "model_id": "distilbert/distilbert-base-multilingual-cased",
+    "revision": "45c032ab32cc946ad88a166f7cb282f58c753c2e",
+    "weights_file": "models/sms_distilmbert/model.safetensors",
+    "weights_sha256": "66592532ccd95b32f64a872b6b63e5ee4752199ec2dbcb2cd0b9fc88f3505af6"
+  },
+  "selection_record_sha256": "92508a075dbda4d946ed1cacc4612f3524fa16d250c701f20adf4bfa60d897fb",
+  "source_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "split_manifest_sha256": "066c36be8258449179b725c514e06971cb26a971b9d1c98191b7c2aecffd0f99",
+  "test_metrics": {
+    "accuracy": 0.9868421052631579,
+    "average_precision_spam": 1.0,
+    "f1_spam": 0.9531914893617022,
+    "false_negative_rate_spam": 0.0,
+    "false_negative_spam_missed": 0,
+    "false_positive_ham_flagged": 11,
+    "false_positive_rate_ham": 0.015193370165745856,
+    "ham_negative_count": 724,
+    "macro_f1": 0.9727683264484224,
+    "precision_spam": 0.9105691056910569,
+    "recall_spam": 1.0,
+    "spam_positive_count": 112,
+    "test_row_count": 836,
+    "threshold": 0.609175443649292,
+    "true_negative_ham_correct": 713,
+    "true_positive_spam_detected": 112
+  },
+  "test_split_used_for_model_or_threshold_selection": false
+}

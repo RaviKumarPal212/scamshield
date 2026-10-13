@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Data and model artifacts (keep README files and placeholders)
+data/raw/*
+!data/raw/README.md
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/README.md
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/README.md
+!data/processed/.gitkeep
+!data/processed/sms_split_manifest.csv
+!data/processed/sms_split_summary.json
+models/*
+!models/.gitkeep
+reports/*
+!reports/.gitkeep
+!reports/data_audit.json
+!reports/sms_distilmbert_test.json
+!reports/sms_distilmbert_validation.json
+!reports/sms_model_selection.json
+!reports/sms_threshold_analysis.json
+!reports/sms_tfidf_logreg_validation.json
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

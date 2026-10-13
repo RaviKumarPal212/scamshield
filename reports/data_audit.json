@@ -1,0 +1,199 @@
+{
+  "datasets": {
+    "hinglish": {
+      "empty_text_count": 0,
+      "invalid_label_count": 0,
+      "label_counts": {
+        "0": 3040,
+        "1": 747
+      },
+      "malformed_row_count": 0,
+      "message_length_chars": {
+        "max": 790,
+        "median": 71,
+        "min": 21
+      },
+      "non_string_text_count": 0,
+      "normalized_duplicate_rows_beyond_first": 229,
+      "path": "data/raw/hinglish_scam_text/data.json",
+      "root_type": "dict",
+      "row_count": 3787,
+      "row_fields": [
+        "label",
+        "text"
+      ],
+      "rows_missing_required_fields": 0,
+      "sha256": "4c2ea6d6c9303f6b7e27740cb3bbebde57ec3cc10ec7b7f9e565e99b5d483f16",
+      "size_bytes": 472689,
+      "status": "audited",
+      "uci_overlap": {
+        "ambiguous_uci_label_count": 0,
+        "distinct_matching_text_count": 3471,
+        "label_agreement_count": 3700,
+        "label_disagreement_count": 0,
+        "matching_row_count": 3700,
+        "nonmatching_label_counts": {
+          "0": 40,
+          "1": 47
+        },
+        "nonmatching_row_count": 87,
+        "nonmatching_rows_with_devanagari_codepoints": 0,
+        "nonmatching_rows_with_romanized_hindi_cues": 37,
+        "normalization": "Unicode NFKC, strip, case-fold",
+        "romanized_hindi_cue_method": "At least one token from a small, manually selected cue-word list; heuristic only, not language identification."
+      }
+    },
+    "phiusiil_url": {
+      "archive_members": {
+        "PhiUSIIL_Phishing_URL_Dataset.csv": 56854345
+      },
+      "column_count": 56,
+      "columns": [
+        "FILENAME",
+        "URL",
+        "URLLength",
+        "Domain",
+        "DomainLength",
+        "IsDomainIP",
+        "TLD",
+        "URLSimilarityIndex",
+        "CharContinuationRate",
+        "TLDLegitimateProb",
+        "URLCharProb",
+        "TLDLength",
+        "NoOfSubDomain",
+        "HasObfuscation",
+        "NoOfObfuscatedChar",
+        "ObfuscationRatio",
+        "NoOfLettersInURL",
+        "LetterRatioInURL",
+        "NoOfDegitsInURL",
+        "DegitRatioInURL",
+        "NoOfEqualsInURL",
+        "NoOfQMarkInURL",
+        "NoOfAmpersandInURL",
+        "NoOfOtherSpecialCharsInURL",
+        "SpacialCharRatioInURL",
+        "IsHTTPS",
+        "LineOfCode",
+        "LargestLineLength",
+        "HasTitle",
+        "Title",
+        "DomainTitleMatchScore",
+        "URLTitleMatchScore",
+        "HasFavicon",
+        "Robots",
+        "IsResponsive",
+        "NoOfURLRedirect",
+        "NoOfSelfRedirect",
+        "HasDescription",
+        "NoOfPopup",
+        "NoOfiFrame",
+        "HasExternalFormSubmit",
+        "HasSocialNet",
+        "HasSubmitButton",
+        "HasHiddenFields",
+        "HasPasswordField",
+        "Bank",
+        "Pay",
+        "Crypto",
+        "HasCopyrightInfo",
+        "NoOfImage",
+        "NoOfCSS",
+        "NoOfJS",
+        "NoOfSelfRef",
+        "NoOfEmptyRef",
+        "NoOfExternalRef",
+        "label"
+      ],
+      "csv_name": "PhiUSIIL_Phishing_URL_Dataset.csv",
+      "domain_field_diagnostics": {
+        "distinct_domain_value_count": 220086,
+        "domain_hostname_mismatch_count": 36,
+        "domain_values_with_both_labels": 54,
+        "field_present": true,
+        "interpretation": "The supplied Domain field is compared with the parsed hostname; it is not assumed to be a registrable domain.",
+        "rows_where_domain_equals_parsed_hostname": 235759
+      },
+      "duplicate_urls_with_conflicting_labels": 0,
+      "empty_cell_count": 0,
+      "empty_url_count": 0,
+      "exact_duplicate_url_group_count": 425,
+      "exact_duplicate_url_rows_beyond_first": 425,
+      "hostname_summary": {
+        "blank_or_unparseable_host_count": 0,
+        "distinct_hostname_count": 220077,
+        "distinct_hostnames_by_label": {
+          "0": 85281,
+          "1": 134850
+        },
+        "hostnames_in_both_labels": 54,
+        "normalization": "URL parser hostname, trailing dot removed, case-folded"
+      },
+      "invalid_label_count": 0,
+      "label_counts": {
+        "0": 100945,
+        "1": 134850
+      },
+      "malformed_row_count": 0,
+      "path": "data/raw/phiusiil_phishing_url.zip",
+      "row_count": 235795,
+      "sha256": "0a639fd03aea6308c5b1c10c92aa23c2ce1505447a9137271865cd0badc9a59a",
+      "size_bytes": 15376007,
+      "status": "audited",
+      "unique_url_value_count": 235370
+    },
+    "uci_sms": {
+      "archive_members": {
+        "SMSSpamCollection": 477907,
+        "readme": 5868
+      },
+      "empty_message_count": 0,
+      "exact_duplicate_rows_beyond_first": 403,
+      "label_counts": {
+        "ham": 4827,
+        "spam": 747
+      },
+      "malformed_line_count": 0,
+      "message_length_chars": {
+        "max": 910,
+        "median": 62.0,
+        "min": 2
+      },
+      "normalized_duplicate_rows_beyond_first": 415,
+      "normalized_texts_with_conflicting_labels": 0,
+      "path": "data/raw/uci_sms_spam_collection.zip",
+      "row_count": 5574,
+      "sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+      "size_bytes": 203415,
+      "status": "audited",
+      "template_candidates": {
+        "interpretation": "Strong near-duplicate/template candidates, not automatic deduplication decisions; human review and group-aware splitting are still required.",
+        "method": "NFKC/strip/case-fold, replace URLs and standalone digit sequences, then normalize punctuation/spacing; signatures shorter than 20 characters excluded",
+        "pairwise_casefolded_character_similarity": {
+          "median": 1.0,
+          "method": "difflib.SequenceMatcher ratio on raw messages after case-folding; heuristic, not semantic similarity",
+          "minimum": 0.8639455782312925,
+          "pairs_at_or_above_0_8": 999,
+          "pairs_below_0_8": 0
+        },
+        "pairwise_raw_message_comparison_count": 999,
+        "repeated_signature_group_count": 305,
+        "repeated_signatures_with_conflicting_labels": 0,
+        "rows_beyond_first_in_repeated_groups": 434
+      },
+      "unexpected_label_count": 0
+    }
+  },
+  "generated_at_utc": "2026-10-12T10:48:41.901494+00:00",
+  "interpretation": "complete means all configured files were audited; it does not mean the data are suitable for training.",
+  "limitations": [
+    "No raw message or URL values are included in this report.",
+    "Devanagari detection is a codepoint check, not language identification.",
+    "URL hostname counts are not registrable-domain counts; use a Public Suffix List-aware grouping step before URL splits.",
+    "No dataset is cleaned, split, or used to train a model."
+  ],
+  "normalization": "Text overlap uses Unicode NFKC, strip, and case-fold. This detects exact normalized matches, not semantic near-duplicates.",
+  "report_version": 1,
+  "run_status": "complete"
+}

@@ -1,0 +1,5 @@
+# Install this lightweight data/ML set first. Transformer packages are deferred.
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+matplotlib>=3.8

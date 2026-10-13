@@ -1,0 +1,6 @@
+# Install only after the data audit and baseline split are approved.
+torch>=2.4
+transformers>=4.44,<5
+accelerate>=1.0
+sentencepiece>=0.2
+protobuf>=3.20

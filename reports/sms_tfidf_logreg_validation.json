@@ -1,0 +1,85 @@
+{
+  "classifier": {
+    "C": 1.0,
+    "class_weight": null,
+    "max_iter": 1000,
+    "name": "LogisticRegression",
+    "random_state": 42,
+    "solver": "liblinear"
+  },
+  "feature_pipeline": {
+    "fit_scope": "train split only",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "strip_accents": "unicode",
+    "sublinear_tf": true,
+    "vectorizer": "TfidfVectorizer"
+  },
+  "generated_at_utc": "2026-10-12T13:47:26.003748+00:00",
+  "label_mapping": {
+    "ham": 0,
+    "spam": 1
+  },
+  "limitations": [
+    "Validation results are for a legacy, non-India-specific SMS spam dataset and must not be presented as Indian scam-detection performance.",
+    "The 0.5 threshold is the default and has not been tuned on validation data.",
+    "The held-out test set has not been evaluated; use it only after model and threshold selection are complete.",
+    "Latency is a local single-message CPU measurement and excludes API/network overhead."
+  ],
+  "package_versions": {
+    "python": "3.11.0",
+    "scikit_learn": "1.9.1"
+  },
+  "run_status": "complete",
+  "saved_model_path": "models/sms_tfidf_logreg.joblib",
+  "saved_model_sha256": "0ee76c6fcf15749b80527a55749ea066bca218d604a64d38ef7f29d07f611fcc",
+  "saved_model_size_bytes": 1253088,
+  "seed": 42,
+  "single_message_latency": {
+    "batch_size": 1,
+    "device": "CPU (scikit-learn estimator)",
+    "hardware_platform": "Windows-10-10.0.26300-SP0",
+    "logical_cpu_count": 12,
+    "measured_requests": 500,
+    "p50_ms": 0.961,
+    "p95_ms": 1.5730549999999999,
+    "preprocessing_included": true,
+    "preprocessing_scope": "TF-IDF vectorization and Logistic Regression predict_proba; excludes HTTP/API overhead.",
+    "warmup_requests": 30
+  },
+  "source_file": "data/raw/uci_sms_spam_collection.zip",
+  "source_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "split_manifest": "data/processed/sms_split_manifest.csv",
+  "split_manifest_sha256": "066c36be8258449179b725c514e06971cb26a971b9d1c98191b7c2aecffd0f99",
+  "split_row_counts": {
+    "test": 836,
+    "train": 3902,
+    "validation": 836
+  },
+  "task": "UCI SMS ham-vs-spam classification; not an India-specific fraud evaluation.",
+  "test_split_used_for_fit_or_metrics": false,
+  "training_duration_seconds": 0.3858738000001267,
+  "validation_metrics_default_threshold": {
+    "accuracy": 0.9629186602870813,
+    "average_precision_note": "Average precision (step-wise precision-recall summary); reported as the PR-AUC-style metric, not ROC-AUC.",
+    "average_precision_positive_spam": 0.9947051565399108,
+    "confusion_matrix_labels_0_ham_1_spam": {
+      "false_negative_spam_missed": 31,
+      "false_positive_ham_flagged_as_spam": 0,
+      "true_negative_ham": 724,
+      "true_positive_spam_detected": 81
+    },
+    "decision_threshold": 0.5,
+    "f1_positive_spam": 0.8393782383419689,
+    "false_negative_count": 31,
+    "false_negative_rate_positive_spam": 0.2767857142857143,
+    "macro_f1": 0.9092090650803827,
+    "positive_spam_prevalence": 0.1339712918660287,
+    "precision_positive_spam": 1.0,
+    "recall_positive_spam": 0.7232142857142857,
+    "threshold_note": "Default 0.5 probability threshold; no validation-based tuning performed.",
+    "validation_row_count": 836
+  }
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f7f4" />
+    <meta name="description" content="A local educational demo for screening SMS messages for spam-like signals." />
+    <title>ScamShield India — SMS check</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="ScamShield India home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>ScamShield <span class="brand-light">India</span></span>
+      </a>
+      <span class="local-badge"><span class="status-dot"></span> Local demo</span>
+    </header>
+
+    <main class="page-shell">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">MESSAGE SCREENING · ENGLISH SMS BENCHMARK</p>
+        <h1 id="page-title">Pause before<br /><span>you respond.</span></h1>
+        <p class="intro-copy">Check a suspicious text for spam-like patterns and clear warning signs. The result is a starting point for your judgment—not a verdict.</p>
+      </section>
+
+      <section class="checker panel" aria-labelledby="checker-title">
+        <div class="panel-heading">
+          <div>
+            <p class="step-label">01 <span>·</span> SCREEN A MESSAGE</p>
+            <h2 id="checker-title">What did you receive?</h2>
+          </div>
+          <span id="service-state" class="service-state" role="status">Checking service…</span>
+        </div>
+
+        <form id="analyze-form">
+          <label for="message">Paste the message text</label>
+          <textarea id="message" name="message" maxlength="5000" required placeholder="Example: Your account will be blocked. Share your OTP now…" aria-describedby="privacy-note character-count"></textarea>
+          <div class="input-meta">
+            <p id="privacy-note">Processed by this local demo. Avoid entering real private messages or credentials.</p>
+            <span id="character-count">0 / 5000</span>
+          </div>
+          <div class="form-actions">
+            <button id="analyze-button" class="primary-button" type="submit"><span>Check message</span><span aria-hidden="true">↗</span></button>
+            <button id="clear-button" class="text-button" type="button">Clear</button>
+          </div>
+          <p id="form-error" class="form-error" role="alert" hidden></p>
+        </form>
+      </section>
+
+      <section id="result" class="result panel" aria-labelledby="result-title" aria-live="polite" hidden>
+        <div class="result-topline">
+          <p class="step-label">02 <span>·</span> SCREENING RESULT</p>
+          <span id="result-tag" class="result-tag"></span>
+        </div>
+        <h2 id="result-title"></h2>
+        <p id="result-summary" class="result-summary"></p>
+        <div id="probability-card" class="probability-card">
+          <div class="probability-copy"><span>Model spam probability</span><strong id="probability-value"></strong></div>
+          <div class="meter" role="img" aria-label="Model spam probability"><span id="probability-meter"></span></div>
+          <p id="threshold-note" class="threshold-note"></p>
+        </div>
+        <div class="signals-heading"><h3>Signals to consider</h3><span id="signal-count"></span></div>
+        <ul id="signal-list" class="signal-list"></ul>
+        <p class="disclaimer"><span aria-hidden="true">ⓘ</span><span id="result-disclaimer"></span></p>
+      </section>
+
+      <aside class="safety-note">
+        <span class="safety-icon" aria-hidden="true">!</span>
+        <p><strong>Never share an OTP, PIN, password, or payment code.</strong> Verify urgent requests through a trusted, official channel—even if a message is not flagged here.</p>
+      </aside>
+
+      <footer class="page-footer">
+        <span>ScamShield India <span class="footer-separator">·</span> Educational prototype</span>
+        <span>Not proof of fraud. Not a safety guarantee.</span>
+      </footer>
+    </main>
+  </body>
+</html>

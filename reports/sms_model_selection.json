@@ -1,0 +1,25 @@
+{
+  "decision_date": "2026-10-12",
+  "decision_status": "locked_for_single_test_evaluation",
+  "selected_model": {
+    "model_id": "distilbert/distilbert-base-multilingual-cased",
+    "revision": "45c032ab32cc946ad88a166f7cb282f58c753c2e",
+    "artifact_directory": "models/sms_distilmbert",
+    "weights_file": "models/sms_distilmbert/model.safetensors",
+    "weights_sha256": "66592532ccd95b32f64a872b6b63e5ee4752199ec2dbcb2cd0b9fc88f3505af6"
+  },
+  "locked_threshold": 0.609175443649292,
+  "threshold_selection_method": "Highest-recall threshold on validation among candidates with spam precision at least 0.90.",
+  "validation_evidence": {
+    "report": "reports/sms_distilmbert_validation.json",
+    "report_sha256": "d46dc1a5a431c5f23c05515cd230eed7ddce5c83db0005235eea6dfdd3ea3c3d",
+    "validation_rows": 836,
+    "spam_rows": 112,
+    "precision_spam": 0.9487179487179487,
+    "recall_spam": 0.9910714285714286,
+    "false_positives": 6,
+    "false_negatives": 1
+  },
+  "rationale": "Prioritize catching suspicious messages while requiring at least 0.90 validation precision; this operating point detects 111 of 112 validation spam messages. The user delegated the model and threshold choice.",
+  "test_split_used_for_selection": false
+}

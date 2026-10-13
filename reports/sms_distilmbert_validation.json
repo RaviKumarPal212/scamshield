@@ -1,0 +1,150 @@
+{
+  "base_model": {
+    "license": "Apache-2.0",
+    "model_id": "distilbert/distilbert-base-multilingual-cased",
+    "pretraining_languages": "Multilingual model card lists 104 languages; this experiment uses English UCI SMS only.",
+    "revision": "45c032ab32cc946ad88a166f7cb282f58c753c2e"
+  },
+  "cpu_single_message_latency": {
+    "batch_size": 1,
+    "device": "CPU (PyTorch transformer)",
+    "hardware_platform": "Windows-10-10.0.26300-SP0",
+    "logical_cpu_count": 12,
+    "measured_requests": 500,
+    "p50_ms": 14.7822,
+    "p95_ms": 33.014545,
+    "preprocessing_included": true,
+    "preprocessing_scope": "Tokenization and model forward pass; excludes HTTP/API overhead.",
+    "torch_version": "2.11.0+cu128",
+    "warmup_requests": 30
+  },
+  "generated_at_utc": "2026-10-12T14:51:32.525506+00:00",
+  "label_mapping": {
+    "ham": 0,
+    "spam": 1
+  },
+  "limitations": [
+    "Validation-only results on UCI SMS spam; do not present them as Hindi/Hinglish or India-specific scam-detection performance.",
+    "The best checkpoint is selected by validation macro-F1 at a 0.5 threshold; no test rows are used.",
+    "Threshold candidates are diagnostic only and require an operating-cost decision before final test evaluation.",
+    "Model and tokenizer are pinned to the reported Hugging Face revision; verify licensing and attribution before redistribution."
+  ],
+  "run_status": "complete",
+  "saved_model_dir": "models/sms_distilmbert",
+  "source_file": "data/raw/uci_sms_spam_collection.zip",
+  "source_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "split_manifest": "data/processed/sms_split_manifest.csv",
+  "split_manifest_sha256": "066c36be8258449179b725c514e06971cb26a971b9d1c98191b7c2aecffd0f99",
+  "split_row_counts": {
+    "test": 836,
+    "train": 3902,
+    "validation": 836
+  },
+  "task": "UCI SMS ham-vs-spam classification; English-source benchmark only, not an India-specific fraud evaluation.",
+  "test_split_used_for_fit_or_metrics": false,
+  "tokenization": {
+    "train": {
+      "longest_tokenized_length_before_truncation": 195,
+      "row_count": 3902,
+      "rows_truncated_at_max_length": 0
+    },
+    "validation": {
+      "longest_tokenized_length_before_truncation": 149,
+      "row_count": 836,
+      "rows_truncated_at_max_length": 0
+    }
+  },
+  "trainer_final_train_metrics": {
+    "epoch": 3.0,
+    "total_flos": 170265108039696.0,
+    "train_loss": 0.06561585202243159,
+    "train_runtime": 169.0552,
+    "train_samples_per_second": 69.244,
+    "train_steps_per_second": 4.33
+  },
+  "training_configuration": {
+    "best_checkpoint": "C:\\Users\\hp5cd\\Downloads\\scamshield-india-starter\\models\\sms_distilmbert_checkpoints\\checkpoint-488",
+    "best_checkpoint_metric": "validation macro-F1 at 0.5 threshold",
+    "cuda_version": "12.8",
+    "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "effective_batch_size": 16,
+    "epochs_requested": 3,
+    "eval_batch_size_per_device": 16,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 2e-05,
+    "max_token_length": 256,
+    "mixed_precision_fp16": true,
+    "seed": 42,
+    "torch_version": "2.11.0+cu128",
+    "train_batch_size_per_device": 8,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01
+  },
+  "training_duration_seconds": 169.28140189999976,
+  "validation_metrics_and_threshold_candidates": {
+    "default_threshold_0_5": {
+      "average_precision_spam": 0.9964600154388809,
+      "f1_spam": 0.9694323144104804,
+      "false_negative_spam_missed": 1,
+      "false_positive_ham_flagged": 6,
+      "ham_negative_count": 724,
+      "macro_f1": 0.9822906547797378,
+      "precision_spam": 0.9487179487179487,
+      "predicted_spam_count": 117,
+      "recall_spam": 0.9910714285714286,
+      "spam_positive_count": 112,
+      "threshold": 0.5,
+      "true_negative_ham_correct": 718,
+      "true_positive_spam_detected": 111,
+      "validation_row_count": 836
+    },
+    "validation_threshold_candidates": {
+      "best_f1_on_validation": {
+        "f1_spam": 0.9821428571428571,
+        "false_negative_spam_missed": 2,
+        "false_positive_ham_flagged": 2,
+        "precision_spam": 0.9821428571428571,
+        "predicted_spam_count": 112,
+        "recall_spam": 0.9821428571428571,
+        "threshold": 0.9841698408126831,
+        "true_negative_ham_correct": 722,
+        "true_positive_spam_detected": 110
+      },
+      "highest_recall_under_precision_floors": {
+        "precision_at_least_0.80": {
+          "f1_spam": 0.9694323144104804,
+          "false_negative_spam_missed": 1,
+          "false_positive_ham_flagged": 6,
+          "precision_spam": 0.9487179487179487,
+          "predicted_spam_count": 117,
+          "recall_spam": 0.9910714285714286,
+          "threshold": 0.609175443649292,
+          "true_negative_ham_correct": 718,
+          "true_positive_spam_detected": 111
+        },
+        "precision_at_least_0.90": {
+          "f1_spam": 0.9694323144104804,
+          "false_negative_spam_missed": 1,
+          "false_positive_ham_flagged": 6,
+          "precision_spam": 0.9487179487179487,
+          "predicted_spam_count": 117,
+          "recall_spam": 0.9910714285714286,
+          "threshold": 0.609175443649292,
+          "true_negative_ham_correct": 718,
+          "true_positive_spam_detected": 111
+        },
+        "precision_at_least_0.95": {
+          "f1_spam": 0.9821428571428571,
+          "false_negative_spam_missed": 2,
+          "false_positive_ham_flagged": 2,
+          "precision_spam": 0.9821428571428571,
+          "predicted_spam_count": 112,
+          "recall_spam": 0.9821428571428571,
+          "threshold": 0.9841698408126831,
+          "true_negative_ham_correct": 722,
+          "true_positive_spam_detected": 110
+        }
+      }
+    }
+  }
+}
